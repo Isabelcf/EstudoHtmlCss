@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tudo sobre Google Glass</title>
+        <!-- A TAG p{} DENTRO DO ESTILO (<style></style>) SERVE PARA COLOCARMOS OS ESTILOS DESEJADOS EM TODOS OS PARÁGRAFO SEM QUE PRECISEMOS ALTERAR O ESILO DE UM PARÁGRAFO A CADA VEZ QUE CRIARMOS UM  -->
+        <link rel="stylesheet" href="_css/estilo.css"/>
+        <link rel="stylesheet" href="_css/fotos.css"/> 
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+
+<body>
+        <div id="interface">
+                <!-- O HEADER SERVE PARA IDENTIFICAR A PARTE DO CABEÇALHO E O ID SERVE PARA FACILITAR A REPRESENTAÇÃO (NADA DE ESPAÇO, LETRAS MAIUSCULAS E Ç E ACENTUAÇÃO)  -->
+                <header id="cabecalho">
+                        <!-- COLOCAR OS TITULOS DENTRO DE UMA TAG HGROUPE (SERVE PARA AGRUPAR TITULOS SEMELHANTES) É MAIS UMA QUESTÃO SEMANTICA PARA QUE O HTML IDENTIFIQUE QUE ESTE TITULO FAZ PARTE DO MESMO GRUPO, NÃO HÁ DIFERENÇA VISUAL  -->
+                        <hgroup>
+                                <h1>Google Glass</h1>
+                                <h2>A revolução do Google está chegando</h2>
+                        </hgroup>
+
+
+                        <!-- A TAG IMG É PARA IMAGENS, O PARAMETRO SRC SERVE PARA IDENTIFICAR O PARAMTRO DA IMAGEM OU SEJA A LOCALIZAÇÃO DA IMAGEM  -->
+                        <img id="icone" src="_imagens/fotos.png">
+                        <!-- A <nav></nav> SERVE PARA INDICAR PARA O NAVEGADOR QUE QUE ESTE SE TRATA DE UM MENU DE NAVEGAÇÃO -->
+                        <nav id="menu"> 
+                                <h1>Menu Principal</h1> <!-- A TAG <h1></h1> SERVE PARA INDICAR O MENU PRINCIPAL OU TÍTULO PRINCIPAL  -->
+
+
+        <!-- A TAG <ol></ol> SERVE PARA INDICAR AO NAVEGADOR LISTAS ORDENADAS DENTRO DO <ol> EXSITE O <li></li> QUE É BASICAMENTE OS ITENS DA LISTA. OBS. CADA Type CRIADO DENTRO DA <ol> DEFINE O TIPO DE LISTA, LETRAS PARA LETRAS E NUMEROS PARA NUMEROS, E ATRAVÉS DO PARAMETRO start (INICAR), (SÓ ACEITA VALORES NUMERICOS), CADA NUMERO COLOCADO INDICA A SEQUENCIA QUE  LISTA IRÁ INICIAR. 
+                JÁ <ul></ul> SERVE PARA LISTAS NÃO ORDENADAS, OU SEJA, LISTA COM APENAS DEMARCADORES, E EM CADA <ul> PODE SER CRIADO UM <type> TAMBÉM, QUE É O DEFINIDOR DO SIMBOLO A SER USADO ANTES DE CADA NOME DA LISTA  -->
+
+                        <!-- A TAG <a href=""></a> SERVE PARA CRIAR UM LINK DE DIRECIONAMENTO NA PARTE DO TEXTO ENTRE A TAG, DENTRO DA TAG CONSEGUIMOS ESTIPULAR SE ELA IRÁ SER DIRECIONADA PARA A MESMA PAGINA OU SE ABRIRÁ UMA ABA DIFERENTE PARA CADA LINK, PARA ISSO BASTA USAR O COMANDO target="_blank" PARA ABRIR EM OUTRO ABA E target="self" PARA ABRIR EM UMA ABA NA MESMA PÁGINA  -->
+                        <ul type="disc">
+                                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="index.html">Home</a></li>
+                                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="specs.html">Especificações</a></li>
+                                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+                                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="multimidia.html">Multimídia</a></li>
+                                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                        </ul>
+                </nav>
+        </header>
+
+
+<section id="corpo-full">
+<article id="noticia-principal">
+                        <header id="cabecalho-artigo">
+                                <hgroup>
+                                        <h3>Glass > Fotos</h3> <!-- &nbsp SERVE PARA DEIXAR UM ESPAÇO EM BRANCO ENTRE AS PALAVRAS, JÁ BR SERVE PARA FAZER QUEBRA DE LINHAS  -->
+                                        <h1>Galeria de Imagens do Google Glass</h1>
+                                        <h2>por Gustavo Guanabara</h2>
+                                        <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                                </hgroup>
+                        </header>
+
+
+<p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
+
+<ul id="album-fotos">
+<li id="foto01"><span>Agenda e lembretes</span></li>
+<li id="foto02"><span>Sergey Brin usando o Glass</span></li>
+<li id="foto03"><span>Leve e compacto</span></li>
+<li id="foto04"><span> Sensação de uma tela de 50"</span></li>
+<li id="foto05"><span> Vários tipos de lente</span></li>
+<li id="foto06"><span> Informações importantes</span></li>
+</ul>
+
+</article>
+</section>
+
+<footer id="rodape">
+                        <p>Copyright 2013 - by Gustavo Guanabara<br/>
+                                <a href="http://www.facebook.com/cursosemvideo" target="_blank"> Facebook</a> | 
+                                <a href=" http://twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
+                        </footer>
+
+                </div>
+        </body>
+        </html>

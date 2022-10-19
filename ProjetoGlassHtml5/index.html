@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tudo sobre Google Glass</title>
+        <!-- A TAG p{} DENTRO DO ESTILO (<style></style>) SERVE PARA COLOCARMOS OS ESTILOS DESEJADOS EM TODOS OS PARÁGRAFO SEM QUE PRECISEMOS ALTERAR O ESILO DE UM PARÁGRAFO A CADA VEZ QUE CRIARMOS UM  -->
+        <link rel="stylesheet" href="_css/estilo.css"/>
+        <link rel="stylesheet" href="_css/media.css"/> 
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<body>
+        <div id="interface">
+                <!-- O HEADER SERVE PARA IDENTIFICAR A PARTE DO CABEÇALHO E O ID SERVE PARA FACILITAR A REPRESENTAÇÃO (NADA DE ESPAÇO, LETRAS MAIUSCULAS E Ç E ACENTUAÇÃO)  -->
+                <header id="cabecalho">
+                        <!-- COLOCAR OS TITULOS DENTRO DE UMA TAG HGROUPE (SERVE PARA AGRUPAR TITULOS SEMELHANTES) É MAIS UMA QUESTÃO SEMANTICA PARA QUE O HTML IDENTIFIQUE QUE ESTE TITULO FAZ PARTE DO MESMO GRUPO, NÃO HÁ DIFERENÇA VISUAL  -->
+                        <hgroup>
+                                <h1>Google Glass</h1>
+                                <h2>A revolução do Google está chegando</h2>
+                        </hgroup>
+
+
+                        <!-- A TAG IMG É PARA IMAGENS, O PARAMETRO SRC SERVE PARA IDENTIFICAR O PARAMTRO DA IMAGEM OU SEJA A LOCALIZAÇÃO DA IMAGEM  -->
+                        <img id="icone" src="_imagens/glass-oculos-preto-peq.png">
+                        <!-- A <nav></nav> SERVE PARA INDICAR PARA O NAVEGADOR QUE QUE ESTE SE TRATA DE UM MENU DE NAVEGAÇÃO -->
+                        <nav id="menu"> 
+                                <h1>Menu Principal</h1> <!-- A TAG <h1></h1> SERVE PARA INDICAR O MENU PRINCIPAL OU TÍTULO PRINCIPAL  -->
+
+
+        <!-- A TAG <ol></ol> SERVE PARA INDICAR AO NAVEGADOR LISTAS ORDENADAS DENTRO DO <ol> EXSITE O <li></li> QUE É BASICAMENTE OS ITENS DA LISTA. OBS. CADA Type CRIADO DENTRO DA <ol> DEFINE O TIPO DE LISTA, LETRAS PARA LETRAS E NUMEROS PARA NUMEROS, E ATRAVÉS DO PARAMETRO start (INICAR), (SÓ ACEITA VALORES NUMERICOS), CADA NUMERO COLOCADO INDICA A SEQUENCIA QUE  LISTA IRÁ INICIAR. 
+                JÁ <ul></ul> SERVE PARA LISTAS NÃO ORDENADAS, OU SEJA, LISTA COM APENAS DEMARCADORES, E EM CADA <ul> PODE SER CRIADO UM <type> TAMBÉM, QUE É O DEFINIDOR DO SIMBOLO A SER USADO ANTES DE CADA NOME DA LISTA  -->
+
+                        <!-- A TAG <a href=""></a> SERVE PARA CRIAR UM LINK DE DIRECIONAMENTO NA PARTE DO TEXTO ENTRE A TAG, DENTRO DA TAG CONSEGUIMOS ESTIPULAR SE ELA IRÁ SER DIRECIONADA PARA A MESMA PAGINA OU SE ABRIRÁ UMA ABA DIFERENTE PARA CADA LINK, PARA ISSO BASTA USAR O COMANDO target="_blank" PARA ABRIR EM OUTRO ABA E target="self" PARA ABRIR EM UMA ABA NA MESMA PÁGINA  -->
+                        <ul type="disc">
+                                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+                                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
+                                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+                                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
+                                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                        </ul>
+                </nav>
+        </header>
+
+        <section id="corpo">
+
+                <article id="noticia-principal">
+                        <header id="cabecalho-artigo">
+                                <hgroup>
+                                        <h3>Tecnologia > &nbsp; Inovações</h3> <!-- &nbsp SERVE PARA DEIXAR UM ESPAÇO EM BRANCO ENTRE AS PALAVRAS, JÁ BR SERVE PARA FAZER QUEBRA DE LINHAS  -->
+                                        <h1>Saiba tudo sobre o Google Glass</h1>
+                                        <h2>por Gustavo Guanabara</h2>
+                                        <h3 class="direita">Atualizado em 23/Abril/2013</h3>
+                                </hgroup>
+                        </header>
+                        <!-- A TAG P SERVE PARA DEFINIR PARÁGRAFOS  -->
+                        <!-- p>Exemplos de <sup>formatação</sup> </p -->
+                        <!-- A TAG <b></b> SERVE PARA DEIXAR A PARTE DO TEXTO DESEJADA EM NEGRITO, JÁ O <i></i> SERVE PARA DEIXAR A PARTE DO TEXTO SELECIONADO INCLINADA (COMO NA LETRA ITALICA), PORÉM PARA DEIXAR ALGUMA PARTE DO MESMO COM DESTAQUE, USA-SE O <em></em>, FICA EM ITALICO. A DIFERENÇA ENTRE O <i> E O <em> É APENAS SEMANTICA, NÃO TEM DIFERENÇA VISUAL, A DIFERENÇA SEMANTICA É QUE ITALICA VOCÊ ESTÁ DIZENDO AO NAVEGADOR QUE QUEREMOS APENAS A PALAVRA EM ITALICO, JÁ O <em> INFORMA QUE VOCê PRECISA DAR ÊNFASE A ALGUMA PALAVRA OU TRECHO.    -->
+                                <h2>O que é</h2>
+                                <!-- A TAG <span></span> SERVE PARA DEIXAR UMA PARTE DO TEXTO EM NEGRITO, AQUI FOI USADO UM EXEMPLO DE CSS, ONDE O ESTILO DA PALAVRA OU TRECHO SELECIONADO É MUDADO PARA NEGRITO ATRAVÉS DO style="" PODEMOS APLICAR DESDE O font-weight: bold (OU bolder PARA APLICAR UM NEGRITO MAIS FORTE, CASO DESEJE MEDIR A QUANTIDADE DE NEGRITO PODEMOS REPRESENTÁ-LOS COM NUMEROS TAMBÉM ONDE 900 É O MÁXIMO QUE CONSEGUIMOS AUMENTAR.), NÃO SOMENTE ESSE ESTILO PODE SER ALTERADO COMO QUALQUER OUTRO, TAMANHO DA FONTE (font-size), COR(color), E PARA ALINHAMENTO BASTA USAR A TAG text-align: center (OU left OU right OU jutify, NO CASO O justify SERVE PARA JUSTIFICAR O TEXTO, DEIXANDO ALINHADO NAS QUEBRAS DE TEXTO), EXISTE TAMBÉM O text-indent: 0px (O NUMERO QUE VOCÊ COLOCA ELE CRIA UM ESPAÇAMENTO NO INCIO DO PARÁGRAFO) -->
+
+
+                                <p>O <span style="font-weight: 900px;">Google Glass</span> é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <a href="http://glass.google.com" target="_blank">Project Glass</a>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeoconferências. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o <em>Google Glass</em> encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
+                                <!-- A BARRA / SERVE PARA SEPARAR AS PASTAS ONDE A IMAGEM SE ENCONTRA, NO CASO COMO MINHA IMAGEM NÃO ESTÁ NA MESMA PASTA QUE MEU ARQUIVO HTML NÃO BASTA COLOCAR O NOME DO ARQUIVO, PRECISO SEMPRE INDICAR O CAMINHO INICAL DO SERVIDOR E AS PASTAS QUE PRECISO ABRIR ATÉ CHEGAR NO ARQUIVO  -->
+                                <figure class="foto-legenda">
+                                        <img src="_imagens/glass-quadro-homem-mulher.jpg">
+                                        <figcaption>
+                                                <h3> Google Glass</h3>
+                                                <p> Uma nova maneira de ver o mundo</p>
+
+                                        </figcaption>
+                                </figure>
+
+                                <h2>Data de lançamento</h2>
+                                <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
+
+                                <h2>Especificações Técnicas</h2>
+                                <table id="tabelaspec">
+                                        <caption>Tabela Técnica do Google Glass <span>Mar/2013</span></caption>
+
+                                        <tr><td class="ce">Tela</td><td class="cd">Resolução equivalente a tela de 25"</td></tr>
+                                        <tr><td rowspan="2" class="ce">Camera</td><td class="cd">5MP para fotos</td></tr>
+                                        <tr><td class="cd">720p para vídeos</td></tr>
+                                        <tr><td rowspan="2" class="ce">Conectividade</td> <td class="cd">Wi-Fi</td></tr>
+                                        <tr><td class="cd">Bluetooth</td></tr>
+                                        <tr><td class="ce">Memória Interna</td><td class="cd"> 12GB</td></tr>
+                                </table>
+                                <h2>Como funciona</h2>
+                                <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça</p>
+
+                                <h2>O que você pode fazer com o Google Glasses</h2>
+                                <p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-<wbr/>humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.</p>
+
+                                <div>
+                <video id="filme1" controls="controls" poster="_imagens/video-mini01.jpg">
+                <source src="_media/one-day.mp4" type="video/mp4">
+                Desculpe, mas não foi possivel carregar seu audio
+        </video>
+</div>        
+                        </article>
+                </section>
+
+                <aside id="lateral">
+                        <h1>Outras Notícias</h1>
+                        <h2>Vídeo mais recente</h2>
+
+                        <div id="">
+                <video id="filme2" controls="controls" poster="_imagens/video-mini02.jpg">
+                <source src="_media/how-it-feels.mp4" type="video/mp4">
+                Desculpe, mas não foi possivel carregar seu audio
+        </video>
+</div>        
+
+
+                        <h1>Novidades no Glass</h1>
+                        <p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos de sua cabeça, sem usar nenhum tipo de alto-falante.</p>
+
+                        <p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p>
+                </aside>
+
+                <footer id="rodape">
+                        <p>Copyright 2013 - by Gustavo Guanabara<br/>
+                                <a href="http://www.facebook.com/cursosemvideo" target="_blank"> Facebook</a> | 
+                                <a href=" http://twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
+                        </footer>
+
+                </div>
+        </body>
+        </html>
+
+<!-- CURIOSIDADE, AO COLOCAR A TAG <WBR/> ANTES DE UMA PALAVRA, SERVE PARA INDICAR QUE UMA PALAVRA ESPECÍFICA PODE TER QUEBRA DE LINHA CASO 
+        A TELA DO DISPOSITIVO SEJA MENOR QUE A FORMATAÇÃO DO TEXTO ORIGINAL, ELE É MUITO ÚTIL PARA GRANDES ENDEREÇOS DE SITES, PODEMOS ULTILIZA-LOS APÓS CADA PONTO FINAL, PARA COMPLEMENTAR A TAG <&SHY/> SERVE PARA IFIENIZAR, O ACONSELHADO É UTILIZAR O &WBR PARA QUEBRAS DE ENDEREÇOS DE SITE E O &SHY QUANDO FOR QUEBRA DE PALAVRA EM TEXTO COMUM-->
+<!-- CURIOSIDADE, ABAIXO ALGUNS SIMBOLOS DE TAG
+&lt; (MENOR QUE < )
+&gt; (MAIOR QUE > )
+&le; (MAIOR OU IGUAL A  )
+&ge; (MENOR OU IGUAL A  )
+
+&pound; (SIMBOLO DE LIBRA)
+&yen; (SIMBOLO DE YEN)
+&euro; (SIMBOLO DE EURO)
+
+&copy; (SIMBOLO COPYRIGHT)
+&reg; (SIMBOLO MARCA REGISTRADA)
+&tarde; (SIMBOLO TRADE MARKETING)
+&permil; (SIMBOLO PORCENTO % É DIVIDIDO POR CEM E PERMIL POR MIL %)&permil; (PORCENTO É DIVIDIDO POR CEM E PERMIL POR MIL)
+&sum; (SIMBOLO DO SOMA)
+&infin; (SIMBOLO DO INFINITO)
+&times; (SIMBOLO DO MULTIPLICAÇÃO)
+&plusmn; (SIMBOLO DO INFINITO) 
+
+PODEMOS FAZER LETRAS GREGAS ENTRE VÁRIOS OUTROS SIMBOLOS, SETAS, NIPES DE CARTAS ENTRE OUTROS, PODEMOS PROCURAR POR MAIS MODELOS PESQUISANDO-->
+
+
+<!-- CURIOSIDADE PARA A PALAVRA OU NUMERO FICAR RISCADO, INDICANDO QUE FOI CANCELADO, COMO EXEMPLO O VALOR ANTIGO DE UM PRODUTO EM OFERTA, UTILIZA-SE A TAG  <del></del>   -->
+
+<!-- CURIOSIDADE, OS TEXTOS TODOS TEM ALGUMAS TAGS PARA FORMATÃÇÃO, ALGUNS EXEMPLOS DE FORMATAÇÃO SÃO:
+<sup></sup> ESSA TAG SERVE PARA GERAR UM TEXTO SOBRESCRITO SOBRE O OUTRO COMO EM UM NÚMERO ELEVADO A OUTRO EXEMPLO: 5<sup>2</sup> 
+<sub></sub> ESSA TAG SERVE PARA GERAR UM TEXTO SUBESCRITO COMO EXEMPLO:  H<sub>2</sub>O   
+<code></code> TUDO QUE FOR ESCRITO DENTRO DESTA TAG SERÁ CONSIDERADO E FORMATADO COMO UM CÓDIGO
+<pre></pre> O CODIGO SERÁ PRÉ FORMATADO, OU SEJA TODOS OS ESPAÇOS, VIRGULAS E ENTER SERÃO RECONHECIDOS PELO NAVEGADOR -->
+
+<!-- CURIOSIDADE, PARA ALTERAR A COR DO FUNDO DA PÁGINA ANTES SE UTILIZAVA O bgcolor="red (ou o exadecimal da cor)", HOJE UTILIZA-SE O sytle DENTRO DA TAG E NESSE style NÓS DECLARAMOS A FUNÇÃO DE background-color: , POR EXEMPLO: <body style="backgroung-color: #000000;">, O style PODE SER APLICADO DENTRO DO style QUE ESTÁ NO HEAD DESTE, SITE E ASSIM MUDARMOS A COR DA PÁGINA INTEIRA DA MESMA FORMA. HÁ TAMBÉM VÁRIAS FORMAS DE REPRESENTAR CORES, POR RGB, RGBA (ONDE O A SIGNIFICA CANAL ALPHA E SERVE PARA DEIXAR A COR COM UM CERTO NÍVEL DE TRANSPARENCIA, ONDE 0 É O MINIMO E 1 MÁXIMO), HSL OU HSLA (MATIZ, SATURAÇÃO E LUMINOSIDADE),CÓDIGO EXADECIMAL OU NOME. -->
+
+        <!-- CURIOSIDADE, PODE-SE COLOCAR UMA IMAGEM AO FUNDO DO TEXTO OU DO SITE USANDO A TAG background-image: url(caminho_da_imagem)  -->
+
+        <!-- CURIOSIDADE UTILIZAR A TAG <figure></figure> ANTES DA TAG <img src=""> DA UM SIGNIFICADO SEMANTICO PARA ESTA IMAGEM DENTRO DO HMTL E AJUDA OS NAVEGADOR A DISTINGUIREM MELHOR AS IMAGENS, ISSO AJUDA NA ACESSIBILIDADE, PESSOAS COM BAIXA VISÃO OU NENHUMA, UTILIZAM APARELHOS CELULAR QUE DITAM O QUE ESTÁ NA PÁGINA E ESSE TIPO DE COMANDO AJUDA ESSES USUÁRIOS A SEREM INCLUSOS AO QUE ACONTECE NO SITE E TEREM ACESSO AO CONTEÚDO QUE ESTÁ SENDO PASSADO  -->
+
